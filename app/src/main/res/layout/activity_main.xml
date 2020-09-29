@@ -173,10 +173,10 @@
         <ImageView
             android:layout_width="50dp"
             android:layout_height="70dp"
-            android:layout_marginLeft="340dp"
-            android:src="@drawable/ic_baseline_expand_more_24"
             android:layout_marginStart="340dp"
-            android:contentDescription="TODO" />
+            android:layout_marginLeft="340dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_baseline_expand_more_24" />
     </androidx.cardview.widget.CardView>
 
     <TextView
@@ -196,49 +196,54 @@
         android:layout_height="246dp"
         android:layout_marginTop="10dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtUtilities">
-    </androidx.recyclerview.widget.RecyclerView>
+        app:layout_constraintTop_toBottomOf="@id/txtUtilities"></androidx.recyclerview.widget.RecyclerView>
+
     <androidx.cardview.widget.CardView
         android:id="@+id/txtAddress"
         android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
         android:layout_height="60dp"
-        app:layout_constraintTop_toBottomOf="@id/txtRecycler"
-        app:layout_constraintLeft_toLeftOf="parent">
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtRecycler">
+
         <TextView
+            style="@style/txtBigStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/address"
-            style="@style/txtBigStyle"
+            android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
-            android:layout_marginStart="20dp" />
+            android:text="@string/address" />
+
         <ImageView
             android:layout_width="50dp"
             android:layout_height="30dp"
-            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
             android:layout_marginLeft="350dp"
-            android:layout_marginTop="17dp"/>
+            android:layout_marginTop="17dp"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
     </androidx.cardview.widget.CardView>
+
     <androidx.cardview.widget.CardView
         android:id="@+id/txtPayment"
         android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
         android:layout_height="60dp"
-        app:layout_constraintTop_toBottomOf="@id/txtAddress"
-        app:layout_constraintLeft_toLeftOf="parent">
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtAddress">
+
         <TextView
+            style="@style/txtBigStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Payment methods"
-            style="@style/txtBigStyle"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="15dp"
+            android:text="Payment methods" />
+
         <ImageView
             android:layout_width="50dp"
             android:layout_height="30dp"
-            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
             android:layout_marginLeft="350dp"
-            android:layout_marginTop="17dp"/>
+            android:layout_marginTop="17dp"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
