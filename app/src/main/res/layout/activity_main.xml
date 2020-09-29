@@ -1,249 +1,255 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#CCCACA">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/blueCard"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="230dp"
-        app:cardBackgroundColor="#51A9EF"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/blueCard"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            app:cardBackgroundColor="#51A9EF"
+            app:layout_constraintTop_toTopOf="parent">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/photoJackCard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:cardBackgroundColor="#51A9EF"
-        app:cardCornerRadius="50dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        </androidx.cardview.widget.CardView>
 
-        <ImageView
-            android:id="@+id/jackImg"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:contentDescription="TODO"
-            android:src="@drawable/jack_jack" />
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/txtJackName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        app:cardBackgroundColor="#51A9EF"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/photoJackCard">
-
-        <TextView
-            style="@style/txtJackcolorstyle"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/photoJackCard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/jack_jack" />
-    </androidx.cardview.widget.CardView>
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="#51A9EF"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/level"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:cardBackgroundColor="#51A9EF"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtJackName">
+            <ImageView
+                android:id="@+id/jackImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/jack_jack" />
 
-        <TextView
-            style="@style/txtJackcolorstyle"
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/txtJackName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Level : " />
-    </androidx.cardview.widget.CardView>
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="#51A9EF"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/photoJackCard">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/txtOrange"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        app:cardBackgroundColor="#51A9EF"
-        app:layout_constraintLeft_toRightOf="@id/level"
-        app:layout_constraintTop_toBottomOf="@id/txtJackName">
+            <TextView
+                style="@style/txtJackcolorstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jack_jack" />
+        </androidx.cardview.widget.CardView>
 
-        <TextView
-            style="@style/txtOrangecolor"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/level"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_4" />
-    </androidx.cardview.widget.CardView>
+            app:cardBackgroundColor="#51A9EF"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtJackName">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/txtPoints"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:cardBackgroundColor="#51A9EF"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/level">
+            <TextView
+                style="@style/txtJackcolorstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level : " />
+        </androidx.cardview.widget.CardView>
 
-        <TextView
-            style="@style/txtPointsStyle"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/txtOrange"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Exp Points : 4,000" />
-    </androidx.cardview.widget.CardView>
+            android:layout_marginTop="3dp"
+            app:cardBackgroundColor="#51A9EF"
+            app:layout_constraintLeft_toRightOf="@id/level"
+            app:layout_constraintTop_toBottomOf="@id/txtJackName">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/smsCard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:layout_marginRight="15dp"
-        app:cardBackgroundColor="#51A9EF"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                style="@style/txtOrangecolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_4" />
+        </androidx.cardview.widget.CardView>
 
-        <ImageView
+        <androidx.cardview.widget.CardView
+            android:id="@+id/txtPoints"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_message_24" />
-    </androidx.cardview.widget.CardView>
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="#51A9EF"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/level">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/editCard"
-        android:layout_width="30dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="15dp"
-        app:cardBackgroundColor="#51A9EF"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/smsCard">
+            <TextView
+                style="@style/txtPointsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exp Points : 4,000" />
+        </androidx.cardview.widget.CardView>
 
-        <ImageView
+        <androidx.cardview.widget.CardView
+            android:id="@+id/smsCard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_notes" />
-    </androidx.cardview.widget.CardView>
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="15dp"
+            app:cardBackgroundColor="#51A9EF"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/settingCard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="19dp"
-        app:cardBackgroundColor="#51A9EF"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editCard">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_message_24" />
+        </androidx.cardview.widget.CardView>
 
-        <ImageView
+        <androidx.cardview.widget.CardView
+            android:id="@+id/editCard"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            app:cardBackgroundColor="#51A9EF"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/smsCard">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_notes" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/settingCard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_settings_24" />
-    </androidx.cardview.widget.CardView>
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="19dp"
+            app:cardBackgroundColor="#51A9EF"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editCard">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/orderCard"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/blueCard">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_settings_24" />
+        </androidx.cardview.widget.CardView>
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:src="@drawable/ic_box" />
-
-        <TextView
-            style="@style/txtBigStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="145dp"
-            android:layout_marginTop="13dp"
-            android:text="Order Status" />
-
-        <ImageView
-            android:layout_width="50dp"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/orderCard"
+            android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:layout_marginStart="340dp"
-            android:layout_marginLeft="340dp"
-            android:contentDescription="TODO"
-            android:src="@drawable/ic_baseline_expand_more_24" />
-    </androidx.cardview.widget.CardView>
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/blueCard">
 
-    <TextView
-        android:id="@+id/txtUtilities"
-        style="@style/txtBigStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/ultilities"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/orderCard" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_box" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/txtRecycler"
-        android:layout_width="match_parent"
-        android:layout_height="246dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtUtilities"></androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                style="@style/txtBigStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="13dp"
+                android:text="Order Status" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/txtAddress"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtRecycler">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="340dp"
+                android:layout_marginLeft="340dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_baseline_expand_more_24" />
+        </androidx.cardview.widget.CardView>
 
         <TextView
+            android:id="@+id/txtUtilities"
             style="@style/txtBigStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="15dp"
-            android:text="@string/address" />
+            android:layout_marginTop="10dp"
+            android:text="@string/ultilities"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/orderCard" />
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="350dp"
-            android:layout_marginTop="17dp"
-            android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
-    </androidx.cardview.widget.CardView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/txtRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="246dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtUtilities"></androidx.recyclerview.widget.RecyclerView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/txtPayment"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtAddress">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtRecycler">
 
-        <TextView
-            style="@style/txtBigStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="15dp"
-            android:text="Payment methods" />
+            <TextView
+                style="@style/txtBigStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/address" />
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="350dp"
-            android:layout_marginTop="17dp"
-            android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
-    </androidx.cardview.widget.CardView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="17dp"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/txtPayment"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtAddress">
+
+            <TextView
+                style="@style/txtBigStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:text="Payment methods" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="17dp"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
